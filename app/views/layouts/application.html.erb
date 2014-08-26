@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= favicon_link_tag 'favicon.jpg' %>
+  <title>Gohuntgeo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h2 id="notice">
+  <% if flash[:notice] %>
+    <%= flash[:notice] %>
+  <% end %></h2>
+<br>
+<%= yield %>
+
+</body>
+</html>

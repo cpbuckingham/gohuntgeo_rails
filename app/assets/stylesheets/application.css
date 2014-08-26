@@ -1,0 +1,181 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#site {
+    color: #00ffa5;
+    width: 100%;
+    background-image: url('cityscape.jpg');
+    background-size: cover;
+    text-emphasis-color: #00ffa5;
+}
+a:link
+{
+    color:#00ffa5;
+}
+
+a:visited
+{
+    color:#00ffa5;
+}
+
+a:hover
+{
+    color:#00ffa5;
+}
+
+#notice
+{
+    color:#00ffa5;
+}
+#welcome
+{
+    color: #00ffa5;
+    display: inline-block;
+}
+.f {
+    float: left
+}
+
+#map {
+    height: 400px;
+    width: 600px;
+}
+#content {
+    color: #00ffa5;
+    border-style: solod;
+    border-width: 5px;
+    text-align: left;
+    margin-bottom: 5%;
+    float: left;
+    width: 30%;
+    height: 350px;
+}
+#location {
+    color: black;
+}
+#why_content {
+    color: #00ffa5;
+    border: 2px solid #00ffa5;
+    width: 700px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+/*#map {*/
+/*font-size: 70%;*/
+/*text-align: left;*/
+/*background-color: #535364;*/
+/*margin-top: 10%;*/
+/*color: #CDCDCD;*/
+#register {
+    color: #00ffa5;
+}
+
+#login {
+    color: #00ffa5;
+}
+
+#contact {
+    color: #00ffa5;
+}
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+#flag-map {
+    border: 5px solid #00ffa5;
+    overflow: hidden;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    float: right;
+
+}
+#header {
+    color: #00ffa5;
+}
+
+img {
+    width: 450px;
+    height: 350px;
+}
+#works {
+    color: #00ffa5;
+    border: 2px solid #00ffa5;
+    text-align: left;
+}
+ul.stately {
+    width:900px; /*width and font size must match*/
+    font-size:900px;
+    color: rgba(58, 53, 54, 0.87);
+}
+#places_ive_been {
+    margin-left: 20%;
+}
+#points {
+    color: #00ffa5
+}
+.container {
+    margin: 0 auto;
+    background-color: #00ffa5;
+    margin-right: 5%;
+    margin-left: 5%
+}
+
+.one_third {
+    float: left;
+    width: 33%;
+    margin-top: 1%;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:after {
+    clear: both;
+}
+
+ul.horizontal-list {
+    list-style: none;
+}
+.horizontal-list li {
+    display: inline-block;
+}
+td
+{
+    color: #00ffa5;
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+#expense_box{
+    margin-right: auto;
+    margin-left: auto;
+    color: #00ffa5;
+    margin-bottom: 5%;
+}

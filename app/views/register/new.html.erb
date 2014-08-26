@@ -1,0 +1,22 @@
+<%= form_for @user, url: registrations_path, html: {class: "registrations-form"} do |f| %>
+  <% f.object.errors.full_messages.each do |error| %>
+    <div class="errors">
+      <%= error %>
+    </div>
+  <% end %>
+  <div>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+  <br>
+  <div>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+  <br>
+  <br>
+  <div>
+    <br>
+    <%= f.submit "Register", class: "button" %>
+  </div>
+<% end %>
