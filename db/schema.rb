@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 1405702081) do
 
   create_table "users", force: true do |t|
     t.string  "username"
-    t.string  "password"
+    t.string  "password_digest"
     t.integer "count"
   end
 

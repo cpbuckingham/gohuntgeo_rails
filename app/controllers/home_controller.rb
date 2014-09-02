@@ -1,15 +1,4 @@
 class HomeController < ApplicationController
-
-  def index
-  end
-
-  def show
-  end
-
-  def how
-  end
-
-  def contact
-  end
+  skip_before_filter :ensure_authenticated_user
 
 end

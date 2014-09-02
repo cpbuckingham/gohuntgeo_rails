@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  root "home#show"
-  resources :user
+  root "home#homepage"
   resources :home
+  resources :login
+  resources :user
+  resources :register
+  resources :how
+  resources :contact
 
 
 end

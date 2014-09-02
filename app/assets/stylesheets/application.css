@@ -10,9 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require stately/stately
  *= require_tree .
  *= require_self
  */
+
+html
+{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
 
 #site {
     color: #00ffa5;
@@ -55,13 +61,14 @@ a:hover
 }
 #content {
     color: #00ffa5;
-    border-style: solod;
+    border-style: solid;
     border-width: 5px;
     text-align: left;
     margin-bottom: 5%;
     float: left;
     width: 30%;
-    height: 350px;
+    height: 380px;
+    padding: 1em;
 }
 #location {
     color: black;
@@ -122,9 +129,10 @@ img {
     text-align: left;
 }
 ul.stately {
-    width:900px; /*width and font size must match*/
+    width:80%; /*width and font size must match*/
     font-size:900px;
     color: rgba(58, 53, 54, 0.87);
+    margin-top: 5%;
 }
 #places_ive_been {
     margin-left: 20%;
@@ -179,3 +187,6 @@ table{
     color: #00ffa5;
     margin-bottom: 5%;
 }
+
+
+

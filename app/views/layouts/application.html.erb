@@ -8,6 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<link rel="stylesheet" type="text/css" href="application.css">
+
+<h1 id="site">
+  <a href='/'>GoHuntGeo</a>
+  <div style="margin-right:75%;">
+    <h6><%= link_to "Login", new_login_path  %></h6>
+    <h6><%= link_to "Register", new_register_path  %></h6>
+    <h6><%= link_to "How it Works", how_index_path %></h6>
+    <h6><%= link_to "Contact us", contact_index_path %></h6>
+    <br>
+  </div>
+</h1>
 <h2 id="notice">
   <% if flash[:notice] %>
     <%= flash[:notice] %>

@@ -1,6 +1,6 @@
-<div id="register">
-  <h1>Register</h1>
-<%= form_for @user, url: register_index_path, method: :create, html: {class: "registrations-form"} do |f| %>
+<div id="login">
+<h1>Login</h1>
+<%= form_for @user, url: login_index_path, html: { class: "signin-form" } do |f| %>
   <% f.object.errors.full_messages.each do |error| %>
     <div class="errors">
       <%= error %>
@@ -17,6 +17,7 @@
   </div>
   <br>
   <div>
-    <%= f.submit "Register" %>
+    <%= f.submit "Login" %>
   </div>
 <% end %>
+  </div>
