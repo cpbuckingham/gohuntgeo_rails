@@ -1,0 +1,22 @@
+<div id="contact">
+  <h1>Refer</h1>
+  <%= form_for @refer, url: refer_index_path, method: :create, html: {class: "refer-form"} do |f| %>
+    <% f.object.errors.full_messages.each do |error| %>
+      <div class="errors">
+        <%= error %>
+      </div>
+    <% end %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <br>
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+    <br>
+    <div>
+      <%= f.submit "Refer" %>
+    </div>
+  <% end %>

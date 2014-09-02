@@ -1,22 +1,22 @@
 <div id="register">
   <h1>Register</h1>
-<%= form_for @user, url: register_index_path, method: :create, html: {class: "registrations-form"} do |f| %>
-  <% f.object.errors.full_messages.each do |error| %>
-    <div class="errors">
-      <%= error %>
+  <%= form_for @user, url: register_index_path, method: :create, html: {class: "registrations-form"} do |f| %>
+    <% f.object.errors.full_messages.each do |error| %>
+      <div class="errors">
+        <%= error %>
+      </div>
+    <% end %>
+    <div>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+    <br>
+    <div>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </div>
+    <br>
+    <div>
+      <%= f.submit "Register" %>
     </div>
   <% end %>
-  <div>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-  </div>
-  <br>
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-  <br>
-  <div>
-    <%= f.submit "Register" %>
-  </div>
-<% end %>

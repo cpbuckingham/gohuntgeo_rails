@@ -29,16 +29,12 @@
       <ul class="horizontal-list">
         <li>
           <h1 id="refer">
-            <form method="get" action="/refer">
-              <button>Refer a Friend</button>
-            </form>
+            <%= link_to "Refer a Friend", new_refer_path  %>
           </h1>
         </li>
         <li>
-          <h1 id="tagging">
-            <form method="get" action="/">
-              <button>Logout</button>
-            </form>
+          <h1 id="logout">
+            <%= link_to "Logout", signout_path  %>
           </h1>
         </li>
       </ul>

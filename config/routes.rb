@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :register
   resources :how
   resources :contact
+  resources :refer
+
+  get "signout" => "login#destroy"
 
 
 end
